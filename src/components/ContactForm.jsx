@@ -14,41 +14,63 @@ export default function ContactForm() {
   };
 
   return (
-    <SectionContainer anchorName="lienhe" backgroundColor={"#196352"}>
-      <Row justify="space-between" align="middle" gutter={[16, 16]}>
-        <Col xs={24} md={10} style={{ textAlign: 'left' }}>
-          <Title level={2} style={{ color: '#ffeb3b', marginBottom: '1rem' }}>ĐĂNG KÝ TƯ VẤN</Title>
-          <Paragraph style={{ color: '#ffffff' }}>
-            Quý khách vui lòng để lại thông tin, chúng tôi sẽ liên hệ ngay
-          </Paragraph>
-        </Col>
-        <Col xs={24} md={14}>
+    <SectionContainer anchorName="lienhe" backgroundColor={'transparent'}>
+      <Row justify="center" gutter={[32, 32]}>
+        <Col xs={24} md={16}>
+          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <Title level={2} style={{ color: '#f25a30' }}>ĐĂNG KÝ TƯ VẤN</Title>
+            <Paragraph style={{ color: '#333333', fontSize: '16px' }}>
+              Quý khách vui lòng để lại thông tin, chúng tôi sẽ liên hệ ngay
+            </Paragraph>
+          </div>
           <Form
             form={form}
             layout="vertical"
             onFinish={handleSubmit}
+            style={{
+              background: '#ffffff',
+              padding: '32px',
+              borderRadius: '12px',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
+            }}
           >
             <Form.Item
               name="name"
+              label="Họ và tên"
               rules={[{ required: true, message: 'Vui lòng nhập họ và tên!' }]}
             >
-              <Input placeholder="Tên của bạn" />
+              <Input size="large" placeholder="Tên của bạn" style={{ borderRadius: '8px' }} />
             </Form.Item>
             <Form.Item
               name="email"
+              label="Email"
               rules={[{ type: 'email', message: 'Email không hợp lệ!' }]}
             >
-              <Input placeholder="Email của bạn" />
+              <Input size="large" placeholder="Email của bạn" style={{ borderRadius: '8px' }} />
             </Form.Item>
             <Form.Item
               name="phone"
+              label="Số điện thoại"
               rules={[{ required: true, message: 'Vui lòng nhập số điện thoại!' }]}
             >
-              <Input placeholder="Số điện thoại" />
+              <Input size="large" placeholder="Số điện thoại" style={{ borderRadius: '8px' }} />
             </Form.Item>
             <Form.Item>
-              <Button type="primary" htmlType="submit" size="large" style={{ backgroundColor: '#ffeb3b', borderColor: '#ffeb3b', color: '#004d40' }} block>
-                ĐĂNG KÝ NGAY
+              <Button
+                type="primary"
+                htmlType="submit"
+                size="large"
+                icon={<i className="fas fa-paper-plane" />}
+                style={{
+                  backgroundColor: '#f25a30',
+                  borderColor: '#fdd835',
+                  color: '#004d40',
+                  borderRadius: '8px',
+                  fontWeight: 'bold'
+                }}
+                block
+              >
+                GỬI THÔNG TIN
               </Button>
             </Form.Item>
           </Form>
