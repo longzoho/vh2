@@ -12,7 +12,7 @@ export default function MasterPlan() {
         <Col xs={24}>
           <Image
             width="100%"
-            src="masterplan/image.png"
+            src="masterplan/image.jpg"
             alt="Mặt bằng tổng thể"
             preview={false}
           />
