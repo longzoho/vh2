@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Passions+Conflict&family=WindSong:wght@400;500&display=swap');
+
+.handwriting.handwriting {
+    font-family: "Ephesis", cursive;
+}
+
+.gradient.gradient {
+    background-image: linear-gradient(90deg, #05C7BD 0%, #F3582F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.strong.strong.strong.strong {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+h2.strong.strong.strong.strong {
+    font-size: 4rem;
+}
+
+h1.strong.strong.strong.strong {
+    font-size: 6rem;
+}

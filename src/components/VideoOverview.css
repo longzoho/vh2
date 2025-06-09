@@ -1,0 +1,44 @@
+.video-overview {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.video-title {
+  color: #4CAF50;
+}
+
+.project-title {
+  color: #FF5722;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  padding: 0 8px;
+}
+
+.icon-inner {
+  color: rgb(5, 199, 189);
+  width: 60px;
+}
+
+.project-overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

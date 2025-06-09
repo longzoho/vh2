@@ -1,0 +1,29 @@
+.overview-table {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    padding: 12px 15px;
+    border: none;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+strong {
+    color: #333;
+}
