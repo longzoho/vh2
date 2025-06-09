@@ -8,9 +8,24 @@ export default function ContactForm() {
   const [form] = Form.useForm();
 
   const handleSubmit = (values) => {
-    console.log('Thông tin liên hệ:', values);
-    message.success('Thông tin của bạn đã được gửi thành công!');
-    form.resetFields();
+    const formName = 'lienhe';
+    const encoded = new URLSearchParams({
+      'form-name': formName,
+      ...values,
+    }).toString();
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encoded,
+    })
+      .then(() => {
+        message.success('Thông tin của bạn đã được gửi thành công!');
+        form.resetFields();
+      })
+      .catch(() => {
+        message.error('Có lỗi xảy ra khi gửi thông tin.');
+      });
   };
 
   return (
@@ -27,6 +42,8 @@ export default function ContactForm() {
             form={form}
             layout="vertical"
             onFinish={handleSubmit}
+            name="lienhe"
+            data-netlify="true"
             style={{
               background: '#ffffff',
               padding: '32px',
@@ -34,6 +51,7 @@ export default function ContactForm() {
               boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
             }}
           >
+            <input type="hidden" name="form-name" value="lienhe" />
             <Form.Item
               name="name"
               label="Họ và tên"
