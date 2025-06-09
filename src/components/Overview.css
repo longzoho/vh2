@@ -27,3 +27,32 @@ th {
 strong {
     color: #333;
 }
+
+@media (max-width: 768px) {
+    .project-details-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .project-details-table tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .project-details-table td {
+        display: block;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-details-table td:first-child {
+        font-weight: bold;
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+
+    .project-details-table td:last-child {
+        padding: 10px;
+    }
+}
