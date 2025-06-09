@@ -1,4 +1,4 @@
-import { Row, Col, Typography, Card } from "antd";
+import { Typography } from "antd";
 import './UtilityItem.css';
 import Title from "./custom/Title";
 const { Paragraph } = Typography;

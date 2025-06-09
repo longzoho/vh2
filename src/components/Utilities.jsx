@@ -1,10 +1,8 @@
 import React from 'react';
-import { Card, Col, Row, Typography } from 'antd';
+import { Col, Row } from 'antd';
 import UtilityItem from './UtilityItem';
 import Title from './custom/Title';
 import SectionContainer from './SectionContainer';
-const { Paragraph } = Typography;
-
 const utilities = [
   {
     title: 'Sở hữu "bộ sưu tập" hệ tiện ích All-in-one đẳng cấp',

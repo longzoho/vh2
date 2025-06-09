@@ -1,13 +1,11 @@
 import './VideoOverview.css';
-import { Layout, Row, Col, Typography, Card } from 'antd';
+import { Row, Col, Card } from 'antd';
 import Title from './custom/Title';
 import { EnvironmentOutlined, BuildOutlined, TeamOutlined, DollarOutlined, HomeOutlined } from '@ant-design/icons';
 import SectionContainer from './SectionContainer';
 import './Overview.css';
 import React from 'react';
 
-const { Content } = Layout;
-const { Paragraph } = Typography;
 
 const Overview = () => {
     return (

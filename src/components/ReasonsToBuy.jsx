@@ -2,7 +2,6 @@ import React from 'react';
 import { Row, Col, Card } from 'antd';
 import SectionContainer from './SectionContainer';
 import Title from './custom/Title';
-import { CheckCircleOutlined, HomeOutlined, ApartmentOutlined, SafetyOutlined, RiseOutlined } from '@ant-design/icons';
 
 const ReasonsToBuy = () => {
   return (

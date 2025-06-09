@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, List, Row, Col, Card, Divider } from 'antd';
+import { Typography, List, Row, Col, Card } from 'antd';
 import { EnvironmentOutlined, CompassOutlined, CarOutlined } from '@ant-design/icons';
 import SectionContainer from './SectionContainer';
 import Title from './custom/Title';

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Form, Input, Button, Typography, Row, Col, message } from 'antd';
-import { UserOutlined, PhoneOutlined, MailOutlined } from '@ant-design/icons';
 import SectionContainer from './SectionContainer';
 import Title from './custom/Title';
 const { Paragraph } = Typography;

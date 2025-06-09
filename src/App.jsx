@@ -3,7 +3,6 @@ import HeroBanner from './components/./HeroBanner';
 import Introduction from './components/Introduction';
 import Utilities from './components/Utilities';
 import MasterPlan from './components/MasterPlan';
-import Pricing from './components/Pricing';
 import Policies from './components/Policies';
 import ContactForm from './components/ContactForm';
 import MediaOverview from './components/MediaOverview';

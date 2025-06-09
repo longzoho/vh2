@@ -1,9 +1,7 @@
 import React from 'react';
-import { Typography, Row, Col, Image } from 'antd';
+import { Row, Col, Image } from 'antd';
 import SectionContainer from './SectionContainer';
 import Title from './custom/Title';
-const { Paragraph } = Typography;
-
 export default function MasterPlan() {
   return (
     <SectionContainer anchorName="matbang">
