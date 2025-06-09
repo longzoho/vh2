@@ -10,6 +10,7 @@ import ReasonsToBuy from './components/ReasonsToBuy';
 import Overview from './components/Overview';
 import LocationInfo from './components/LocationInfo';
 import InvestorInfo from './components/InvestorInfo';
+import Exclusive from './components/Exclusive';
 import Title from './components/custom/Title';
 
 const { Header, Content, Footer } = Layout;
@@ -51,6 +52,11 @@ export default function App() {
                   </a>
                 </Menu.Item>
                 <Menu.Item key="investor">
+                  <a href="#chu-dau-tu" onClick={(e) => handleScroll(e, 'chu-dau-tu')} style={{ color: '#fff' }}>
+                    CHỦ ĐẦU TƯ
+                  </a>
+                </Menu.Item>
+                <Menu.Item key="exclusive">
                   <a href="#daily" onClick={(e) => handleScroll(e, 'daily')} style={{ color: '#fff' }}>
                     ĐẠI LÝ
                   </a>
@@ -83,6 +89,7 @@ export default function App() {
         <MasterPlan />
         <ReasonsToBuy />
         <InvestorInfo />
+        <Exclusive />
         <MediaOverview />
         <Policies />
         <ContactForm />
