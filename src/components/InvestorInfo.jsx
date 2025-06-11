@@ -19,7 +19,7 @@ const InvestorInfo = () => {
             src="investorInfo/investor.png"
             alt="Logo Việt Phúc Holdings"
             preview={false}
-            style={{ width: '500px', maxWidth: '100%', objectFit: 'contain', borderRadius: '8px' }}
+            style={{ width: '500px', maxWidth: 'calc(100vw - 40px)', objectFit: 'contain', borderRadius: '8px' }}
           />
         </div>
         <div style={{ flex: '1', minWidth: '300px' }}>
