@@ -34,7 +34,7 @@ const InvestorInfo = () => {
             Trải qua gần 20 năm thành lập và phát triển, Công ty CP Phát triển Thành Phố Xanh đã có bề dày kinh nghiệm và ghi dấu ấn bởi sự thành công của nhiều dự án khác nhau. Nổi bật nhất là Khu dân cư và công viên Phước Thiện (tên thương mại Vinhomes Grand Park) tại quận 9 (TP. HCM), quy mô 270 ha, đem đến thị trường 40.000 căn hộ cao tầng và 1.700 sản phẩm thấp tầng.
           </Paragraph>
           <Paragraph style={{ fontSize: '16px', lineHeight: '1.6', color: '#34495e' }}>
-            Sự thành công của Vinhomes Grand Park là cơ sở để tin rằng Vinhomes Green City Long An được đầu tư bởi Công ty CP Phát triển Thành Phố Xanh sẽ mang đến Đức Hòa một dự án khang trang, mang đến cho khách hàng các sản phẩm nhà ở chất lượng và đem đến cho giới đầu tư "sân chơi" an toàn và đầy hứa hẹn.
+            Sự thành công của Vinhomes Grand Park là cơ sở để tin rằng Vinhomes Green City Tây Bắc Hồ Chí Minh được đầu tư bởi Công ty CP Phát triển Thành Phố Xanh sẽ mang đến Đức Hòa một dự án khang trang, mang đến cho khách hàng các sản phẩm nhà ở chất lượng và đem đến cho giới đầu tư "sân chơi" an toàn và đầy hứa hẹn.
           </Paragraph>
         </div>
       </div>

@@ -32,7 +32,7 @@ export default function App() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <img src="/logo.png" alt="Logo" style={{ height: 80, padding: 5 }} />
-              <h1 style={{ fontSize: 24, color: '#fff', fontFamily: 'Arial, sans-serif', margin: 0 }}>Vinhomes Green City Long An</h1>
+              <h1 style={{ fontSize: 24, color: '#fff', fontFamily: 'Arial, sans-serif', margin: 0 }}>Vinhomes Green City Tây Bắc</h1>
             </div>
             <div style={{ overflowX: 'auto', whiteSpace: 'nowrap', marginLeft: 'auto' }}>
               <Menu mode="horizontal" defaultSelectedKeys={['overview']} style={{ backgroundColor: 'transparent', color: '#fff', fontWeight: 'bold', minWidth: 700 }}>
@@ -90,7 +90,6 @@ export default function App() {
         <ReasonsToBuy />
         <InvestorInfo />
         <Exclusive />
-        <MediaOverview />
         <Policies />
         <ContactForm />
       </Content>

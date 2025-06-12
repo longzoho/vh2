@@ -24,7 +24,7 @@ const ReasonsToBuy = () => {
               <Card style={{ backgroundColor: '#fff', height: '100%' }}>
                 <img src="reasons-to-buy/home.svg" alt="Không gian sống TRỌN VẸN" style={{ width: '60px', height: '60px', color: '#FF6F61' }} />
                 <Title level={3} style={{ color: '#FF6F61' }}>Không gian sống TRỌN VẸN</Title>
-                <p>Mô hình "ALL IN ONE" được chủ đầu tư áp dụng triệt để tại Vinhomes Green City Long An. Nơi đây có đầy đủ mọi tiện ích phục vụ cho nhu cầu sống của con người, từ cơ bản cho đến cao cấp. Khi mọi thứ diễn ra trong một vài bước chân, không chỉ tiết kiệm thời gian cho cư dân mà còn nâng tầm chất lượng cuộc sống một cách ngoạn mục.</p>
+                <p>Mô hình "ALL IN ONE" được chủ đầu tư áp dụng triệt để tại Vinhomes Green City Tây Bắc Hồ Chí Minh. Nơi đây có đầy đủ mọi tiện ích phục vụ cho nhu cầu sống của con người, từ cơ bản cho đến cao cấp. Khi mọi thứ diễn ra trong một vài bước chân, không chỉ tiết kiệm thời gian cho cư dân mà còn nâng tầm chất lượng cuộc sống một cách ngoạn mục.</p>
               </Card>
             </Col>
             <Col xs={24} sm={12} md={8} lg={8} xl={8}>
@@ -57,4 +57,4 @@ const ReasonsToBuy = () => {
   );
 };
 
-export default ReasonsToBuy; 
+export default ReasonsToBuy;

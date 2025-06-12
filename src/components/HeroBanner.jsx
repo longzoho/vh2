@@ -14,12 +14,12 @@ export default function HeroBanner() {
         className="hero-image"
       />
       <div className="hero-content">
-        <Title handWriting className="hero-subtitle">Dự án</Title>
+        <Title handWriting className="hero-subtitle">Khu đô thị</Title>
         <Title className="hero-title">VINHOMES GREEN CITY</Title>
-        <Title className="hero-location">Đức Hòa – Long An</Title>
+        <Title className="hero-location"></Title>
         <Title level={2} className="hero-highlight">THÀNH PHỐ GIAO THƯƠNG</Title>
         <Title className="hero-tagline">Sinh thái thịnh vượng</Title>
-        <Title level={5}>
+        <Title className={'hero-highlight-bottom'} level={5}>
           Đô thị All-in-one đầu tiên phía Tây Bắc TP. Hồ Chí Minh
         </Title>
         <Button type="primary" size="large">Đăng ký tư vấn</Button>

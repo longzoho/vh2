@@ -38,6 +38,13 @@ export default function Policies() {
             <Paragraph>
               Ngân hàng hỗ trợ <Text strong>vay tới 70%</Text> giá trị căn hộ, <Text strong>lãi suất ưu đãi trong 24 tháng đầu</Text>.
             </Paragraph>
+            <ul style={{ paddingLeft: '1.2em' }}>
+              <li>Vietcombank</li>
+              <li>Techcombank</li>
+              <li>Viettinbank</li>
+              <li>BIDV</li>
+              <li>MBBank</li>
+            </ul>
           </div>
         </Col>
         <Col xs={24} md={12}>

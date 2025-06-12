@@ -51,7 +51,7 @@ const Overview = () => {
                                 <tbody>
                                     <tr>
                                         <td width={200}><strong>Tên gọi dự án:</strong></td>
-                                        <td>Vinhomes Green City, Vinhomes Green City Long An, Vinhomes Green City Hậu Nghĩa, Vinhomes Long An,...</td>
+                                        <td>Vinhomes Green City, Vinhomes Green City Tây Bắc Hồ Chí Minh, Vinhomes Green City Hậu Nghĩa, Vinhomes Long An,...</td>
                                     </tr>
                                     <tr>
                                         <td><strong>Tên pháp lý:</strong></td>

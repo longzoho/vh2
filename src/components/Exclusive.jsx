@@ -16,7 +16,7 @@ const Exclusive = () => {
       <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '16px', alignItems: 'center' }}>
         <div style={{ flex: '0 0 auto', minWidth: '500px' }}>
           <Image
-            src="investorInfo/exclusive.jpg"
+            src="investorInfo/exclusive-2.jpg"
             alt="Logo Việt Phúc Holdings"
             preview={false}
             style={{ width: '500px', maxWidth: 'calc(100vw - 40px)', objectFit: 'contain', borderRadius: '8px' }}

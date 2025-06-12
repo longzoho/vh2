@@ -47,18 +47,20 @@ const LocationInfo = () => {
           <Card title={<span><CarOutlined /> Kết nối giao thông</span>} style={{ marginBottom: 24 }}>
             <Paragraph style={{ fontSize: '16px', lineHeight: '1.8' }}>
               Vị trí lý tưởng để <Text strong>giãn dân từ TP.HCM</Text> trong bối cảnh đất chật, giá cao. Dễ dàng tiếp cận qua các tuyến:
-              <Text italic> ĐT823, ĐT824, ĐT825, cao tốc 02, Vành đai 4, Quốc lộ 1A, Quốc lộ 22, cao tốc Trung Lương – TP.HCM</Text>. 
-              Thời gian di chuyển chỉ khoảng <Text strong>70–90 phút</Text>.
+              <Text italic> ĐT823, ĐT824, ĐT825, cao tốc 02, Vành đai 4, Quốc lộ 1A, Quốc lộ 22, cao tốc Trung Lương – TP.HCM</Text>.
+              Thời gian di chuyển chỉ khoảng <Text strong>15–20 phút</Text>.
             </Paragraph>
           </Card>
 
-          <Card title="Lợi thế phát triển" bordered={false}>
-            <Paragraph style={{ fontSize: '16px', lineHeight: '1.8' }}>
-              Đức Hòa là huyện trọng điểm, được quy hoạch trở thành <Text strong>đô thị vệ tinh của TP.HCM</Text>. Với 13 KCN và 20 cụm CN, nơi đây thu hút <Text strong>lượng lớn lao động và nhà đầu tư</Text>.
-            </Paragraph>
-            <Paragraph style={{ fontSize: '16px', lineHeight: '1.8' }}>
-              Trong bán kính <Text strong>3–5km</Text>, có thể tiếp cận nhiều KCN lớn như: <Text italic>KCN Đức Hòa, Tân Đức, Xuyên Á, Đức Hòa Đông</Text>, tạo động lực gia tăng giá trị cho Vinhomes Green City.
-            </Paragraph>
+          <Card title="Tiềm năng phát triển" bordered={false}>
+            <List
+              dataSource={[
+                'Dự án trải rộng 197 ha, tọa lạc ngay trên Quốc lộ N2 – tuyến huyết mạch liên kết TP.HCM với Tây Nam Bộ và Tây Bắc TP.HCM',
+                'Tiếp cận nhiều tuyến vành đai (Vành đai 3, 4), cao tốc (TP.HCM – Trung Lương, HCM – Mộc Bài, Bắc–Nam phía Tây), tuyến Metro số 2 Bến Thành – Tham Lương… giúp kết nối linh hoạt đến trung tâm và vùng lân cận',
+                'Là “cửa ngõ” giữa TP.HCM – Long An – Tây Nam Bộ và tiếp giáp chuỗi KCN lớn như Đức Hòa I, II, III, …',
+              ]}
+              renderItem={item => <List.Item style={{ fontSize: '16px' }}>{item}</List.Item>}
+            />
           </Card>
         </Col>
       </Row>

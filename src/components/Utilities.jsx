@@ -11,7 +11,7 @@ const utilities = [
   },
   {
     title: 'Khu trung tâm thương mại Vincom Mega Mall',
-    description: 'Nằm ở phía Bắc dự án, bên cạnh khu nhà ở cao tầng. Đây là đại tiện ích nổi bật nhất tại Vinhomes Green City Long An nói riêng và ở các dự án khu đô thị mang thương hiệu Vinhomes nói chung. Nơi đây có quy mô lớn, điểm đặt của các thương hiệu nổi tiếng, điểm đến vui chơi – giải trí bậc nhất.',
+    description: 'Nằm ở phía Bắc dự án, bên cạnh khu nhà ở cao tầng. Đây là đại tiện ích nổi bật nhất tại Vinhomes Green City Tây Bắc Hồ Chí Minh nói riêng và ở các dự án khu đô thị mang thương hiệu Vinhomes nói chung. Nơi đây có quy mô lớn, điểm đặt của các thương hiệu nổi tiếng, điểm đến vui chơi – giải trí bậc nhất.',
     image: 'utilities/Vinhomes-Urban-Lake-Long-An-tienich2.webp',
   },
   {
@@ -36,7 +36,7 @@ export default function Utilities() {
     <SectionContainer anchorName="tienich">
       <Row gutter={[16, 16]} justify="center">
         <Col span={24} style={{ textAlign: 'center' }}>
-          <Title level={2} handWriting>Tiện ích</Title>
+          <Title level={1} handWriting>Tiện ích</Title>
         </Col>
         <Col span={24} style={{ textAlign: 'center' }}>
           <Title level={2} strong gradient>VINHOMES GREEN CITY</Title>
