@@ -39,27 +39,6 @@ const dataSource = [
     },
 ];
 
-const columns = [
-    {
-        title: "SẢN PHẨM",
-        dataIndex: "type",
-        key: "type",
-        align: "left",
-    },
-    {
-        title: "DIỆN TÍCH (M²)",
-        dataIndex: "area",
-        key: "area",
-        align: "left",
-    },
-    {
-        title: "GIÁ THAM KHẢO (TỶ/CĂN)",
-        dataIndex: "price",
-        key: "price",
-        align: "left",
-    },
-];
-
 export default function PriceTable() {
     return (
         <SectionContainer backgroundImage="pricetable/vhbg.jpg" className={styles.priceTableContainer}>
