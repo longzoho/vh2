@@ -5,40 +5,7 @@ import './Title.css';
 
 const { Title: AntTitle } = Typography;
 
-export default function Title(props) {
-    const { children, handWriting, gradient, className, strong, style, imgBg, ...rest } = props;
-    const [combinedClassName, setCombinedClassName] = useState('');
-    const [combinedStyle, setCombinedStyle] = useState({});
-
-    useEffect(() => {
-        let cssNames = className ? className.split(' ') : [];
-        if (handWriting) {
-            cssNames = [...cssNames, 'handwriting'];
-        }
-        if (gradient) {
-            cssNames = [...cssNames, 'gradient'];
-        }
-        if (strong) {
-            cssNames = [...cssNames, 'strong'];
-        }
-        if (cssNames.length > 0) {
-            setCombinedClassName(cssNames.join(' '));
-        }
-
-    }, [handWriting, gradient, className, strong]);
-
-    useEffect(() => {
-        if (imgBg) {
-            setCombinedStyle({ ...style, backgroundImage: `url(${imgBg})`, color: 'rgba(0,0,0,0)', backgroundClip: 'text' });
-        } else {
-            setCombinedStyle({ ...style });
-        }
-    }, [imgBg, style]);
-
-    return <AntTitle {...rest} className={combinedClassName} style={combinedStyle}>{children}</AntTitle>;
-}
-
-Title.propTypes = {
+const TitleProps = {
     children: PropTypes.node.isRequired,
     handWriting: PropTypes.bool,
     className: PropTypes.string,
@@ -46,4 +13,36 @@ Title.propTypes = {
     gradient: PropTypes.bool,
     strong: PropTypes.bool,
     imgBg: PropTypes.string,
+    center: PropTypes.bool,
 };
+
+/**
+ * 
+ * @param {*} props : TitleProps
+ * @returns 
+ */
+export default function Title(props) {
+    const { children, handWriting, gradient, className, strong, style, imgBg, center, ...rest } = props;
+    const [combinedClassName, setCombinedClassName] = useState('');
+    const [combinedStyle, setCombinedStyle] = useState({});
+
+    useEffect(() => {
+        const cssNames = [
+            className,
+            handWriting && 'handwriting',
+            gradient && 'gradient',
+            strong && 'strong',
+            center && 'center'
+        ].filter(Boolean).join(' ');
+        
+        setCombinedClassName(cssNames);
+        setCombinedStyle(imgBg ? 
+            { ...style, backgroundImage: `url(${imgBg})`, color: 'rgba(0,0,0,0)', backgroundClip: 'text' } : 
+            { ...style }
+        );
+    }, [handWriting, gradient, className, strong, center, imgBg, style]);
+
+    return <AntTitle {...rest} className={combinedClassName} style={combinedStyle}>{children}</AntTitle>;
+}
+
+Title.propTypes = TitleProps;

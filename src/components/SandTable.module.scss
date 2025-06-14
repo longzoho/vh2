@@ -1,0 +1,22 @@
+.sandTable {
+  :global(.slick-dots li) {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ccc;
+
+    &:after {
+      height: 16px;
+    }
+  }
+
+  :global(.slick-dots li.slick-active) {
+    width: 16px;
+  }
+}
+
+.sandTableContainer {
+  :global(h1) {
+    text-align: center;
+  }
+}

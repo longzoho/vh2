@@ -11,6 +11,10 @@
     color: transparent;
 }
 
+.center.center {
+    text-align: center;
+}
+
 .strong.strong.strong.strong {
     font-weight: 900;
     font-size: 3rem;
